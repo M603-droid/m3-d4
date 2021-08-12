@@ -37,14 +37,14 @@
       img {
         height: 200px !important;
       }
-      * {
-        font-size: small !important;
+
+      body {
+        background-color: rgb(19, 15, 15);
       }
       h1 {
         font-weight: bold;
-      }
-      body {
-        background-color: rgb(19, 15, 15);
+        background-color: aquamarine;
+        color: black !important;
       }
     </style>
   </head>
@@ -52,32 +52,29 @@
     <br />
     <h1 class="text-light text-center">Welcome to the Book Store</h1>
 
-    <div id="selected" class="container">
-      <div class="input-group mb-3">
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="button-addon1"
-        >
-          Search
-        </button>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="What do you want"
-          aria-label="Example text with button addon"
-          aria-describedby="button-addon1"
-        />
-      </div>
-    </div>
     <div class="container">
-      <div class="row">
-        <div
-          id="cart-list"
-          class="row row-cols-1 row-cols-md-2 cols-lg-4"
-        ></div>
+    <div class="row">
+        <div class="input-group mb-3">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon1"
+          >
+            Search
+          </button>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="What do you want"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+          />
+        </div>
+        </div>
+        <div id="cart-list" class="row row-cols-1 row-cols-md-2"></div>
       </div>
-    </div>
+    
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
